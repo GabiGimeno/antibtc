@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>AntiBTC (ANTI)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     body {
-      margin: 0;
-      background: radial-gradient(circle at top, #111 0%, #000 70%);
+      background: #0b0b0b;
       color: #eaeaea;
       font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+      padding: 40px 20px;
+      max-width: 900px;
       line-height: 1.6;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-
-    /* HERO */
-    .hero {
+    .center {
       text-align: center;
-      margin-bottom: 50px;
     }
 
     .logo {
-      width: 170px;
-      margin-bottom: 20px;
-      animation: float 6s ease-in-out infinite;
-      filter: drop-shadow(0 0 25px rgba(255,180,60,0.25));
+      width: 140px;
+      margin: 0 auto 20px;
+      animation: float 4s ease-in-out infinite;
     }
 
     @keyframes float {
       0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+      50% { transform: translateY(-8px); }
       100% { transform: translateY(0); }
     }
 
     h1 {
-      font-size: 2.6em;
+      font-size: 36px;
       margin-bottom: 10px;
     }
 
     h2 {
-      margin-top: 70px;
+      margin-top: 50px;
       border-bottom: 1px solid #333;
-      padding-bottom: 10px;
+      padding-bottom: 6px;
     }
 
-    p {
-      margin: 15px 0;
+    .subtitle {
+      opacity: 0.8;
+      margin-bottom: 20px;
     }
 
-    .button {
+    .buy-button {
       display: inline-block;
-      margin-top: 25px;
-      padding: 15px 30px;
-      background: linear-gradient(90deg, #f1c40f, #e67e22);
+      margin: 20px 0;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #f5a623, #f7c14b);
       color: #000;
       font-weight: bold;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 10px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 0 20px rgba(255,170,0,0.3);
-    }
-
-    .button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(255,170,0,0.6);
     }
 
     .box {
-      background: rgba(20,20,20,0.9);
-      border: 1px solid #222;
-      border-radius: 12px;
-      padding: 25px;
-      margin-top: 30px;
+      background: #151515;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
     }
 
     ul {
@@ -88,181 +74,151 @@
       margin-bottom: 8px;
     }
 
-    code {
-      background: #111;
-      padding: 8px 12px;
-      border-radius: 6px;
-      display: block;
-      margin-top: 10px;
-      word-break: break-all;
-      color: #f1c40f;
+    a {
+      color: #4da3ff;
+      text-decoration: none;
     }
 
-    a {
-      color: #4ea1ff;
-      text-decoration: none;
+    .contract {
+      font-family: monospace;
+      word-break: break-all;
+      color: #f5a623;
+      margin-top: 10px;
     }
 
     .footer {
       text-align: center;
-      margin-top: 80px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-
-    .socials {
-      margin-top: 20px;
-    }
-
-    .socials a {
-      margin: 0 10px;
-      font-weight: bold;
+      opacity: 0.6;
+      margin-top: 60px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-      <img src="logotipo.png" alt="AntiBTC logo" class="logo">
+  <!-- HERO -->
+  <div class="center">
+    <img src="logotipo.png" alt="AntiBTC logo" class="logo" />
 
-      <h1>AntiBTC (ANTI)</h1>
-      <p><strong>Un experimento de suministro fijo en la red Base.</strong></p>
-
-      <a class="button" href="https://app.uniswap.org/#/swap?chain=base" target="_blank">
-        Comprar ANTI en Uniswap
-      </a>
+    <h1>AntiBTC (ANTI)</h1>
+    <div class="subtitle">
+      Un experimento de suministro fijo en la red Base.
     </div>
 
-    <!-- INTRO -->
-    <div class="box">
-      <p>
-        AntiBTC es un token experimental inspirado en el principio más importante de Bitcoin:
-        <strong>la escasez absoluta</strong>.
-      </p>
-      <p>
-        Fue lanzado de forma transparente en Base, sin mecanismos ocultos,
-        sin privilegios y sin control posterior.
-      </p>
-    </div>
-
-    <!-- FILOSOFÍA -->
-    <h2>Filosofía</h2>
-    <div class="box">
-      <p>
-        Bitcoin nació como una alternativa al sistema financiero tradicional:
-        descentralizado, sin intermediarios y resistente a la manipulación.
-      </p>
-
-      <p>
-        Con el tiempo, una parte significativa del suministro de Bitcoin
-        ha sido absorbida por instituciones, fondos y grandes actores financieros,
-        alterando el contexto en el que se construyó su narrativa original.
-      </p>
-
-      <p>
-        AntiBTC no pretende reemplazar a Bitcoin ni competir con él.
-        Es un experimento conceptual que plantea una pregunta distinta:
-      </p>
-
-      <p><strong>
-        ¿Qué ocurre cuando la escasez existe desde el primer bloque
-        y todo el suministro está disponible desde el día uno?
-      </strong></p>
-
-      <p>
-        En un entorno donde las instituciones ya dominan Bitcoin,
-        AntiBTC observa qué sucede cuando un activo nace sin ventajas
-        estructurales para nadie.
-      </p>
-
-      <p>
-        Sin emisiones. Sin desbloqueos. Sin calendarios.
-        El mercado —y solo el mercado— decide.
-      </p>
-    </div>
-
-    <!-- PRINCIPIOS -->
-    <h2>Principios básicos</h2>
-    <ul>
-      <li>Suministro fijo, para siempre</li>
-      <li>Sin acuñar, sin quemar</li>
-      <li>Sin impuestos ni restricciones</li>
-      <li>Sin privilegios de propietario</li>
-      <li>Totalmente en cadena y verificable</li>
-      <li>El mercado lo decide todo</li>
-    </ul>
-
-    <!-- TOKENOMICS -->
-    <h2>Tokenomics</h2>
-    <ul>
-      <li>Suministro total: 21.000.000 ANTI</li>
-      <li>Acuñación: deshabilitada permanentemente</li>
-      <li>Impuestos: 0%</li>
-      <li>Cadena: Base</li>
-      <li>Liquidez: ETH / ANTI en Uniswap</li>
-    </ul>
-
-    <!-- CONTRATO -->
-    <h2>Dirección del contrato</h2>
-    <div class="box">
-      <p>Contrato verificado en Base:</p>
-      <code>PEGA_AQUÍ_TU_DIRECCIÓN_REAL_DEL_CONTRATO</code>
-      <p>
-        <a href="#" target="_blank">Ver en Basescan</a>
-      </p>
-    </div>
-
-    <!-- LIQUIDEZ -->
-    <h2>Distribución y liquidez</h2>
-    <div class="box">
-      <p>
-        Los 21.000.000 de tokens ANTI existen en la cadena desde el primer día.
-        No hay vesting, desbloqueos ni distribución automática.
-      </p>
-
-      <p>
-        Solo una parte del suministro está aportada como liquidez en Uniswap.
-        Cualquier cambio es manual y totalmente visible en cadena.
-      </p>
-    </div>
-
-    <!-- UNISWAP WARNING -->
-    <h2>Advertencia de Uniswap</h2>
-    <div class="box">
-      <p>
-        AntiBTC es un token nuevo, con liquidez inicial limitada
-        y sin historial prolongado.
-      </p>
-      <p><strong>Esto NO significa que sea una trampa.</strong></p>
-      <p>Cualquiera puede comprar y vender libremente.</p>
-    </div>
-
-    <!-- TRANSPARENCIA -->
-    <h2>Transparencia</h2>
-    <ul>
-      <li><a href="#" target="_blank">Contrato en Basescan</a></li>
-      <li><a href="#" target="_blank">Pool en Uniswap</a></li>
-      <li><a href="#" target="_blank">Wallet del implementador</a></li>
-    </ul>
-
-    <!-- SOCIAL -->
-    <div class="socials">
-      <p>Contacto y presencia:</p>
-      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-      <p>AntiBTC es un experimento, no una inversión.</p>
-      <p>Sin hoja de ruta. Sin promesas.</p>
-    </div>
-
+    <a class="buy-button"
+       href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0x29d6f672e051beac52c41956131fe299c21d195e"
+       target="_blank">
+      Comprar ANTI en Uniswap
+    </a>
   </div>
+
+  <div class="box">
+    AntiBTC es un token experimental inspirado en el principio más importante de Bitcoin:  
+    <strong>la escasez absoluta</strong>.
+    <br><br>
+    Fue lanzado de forma transparente en Base, sin mecanismos ocultos, sin privilegios
+    y sin control posterior.
+  </div>
+
+  <!-- FILOSOFÍA -->
+  <h2>Filosofía</h2>
+  <div class="box">
+    Bitcoin nació como una alternativa al sistema financiero tradicional:
+    descentralizado, sin intermediarios y resistente a la manipulación.
+    <br><br>
+    Con el tiempo, una parte significativa del suministro de Bitcoin ha sido absorbida
+    por instituciones, fondos y grandes actores financieros, alterando el contexto en
+    el que se construyó su narrativa original.
+    <br><br>
+    AntiBTC no pretende reemplazar a Bitcoin ni competir con él.
+    Es un experimento conceptual que plantea una pregunta distinta:
+    <br><br>
+    <strong>
+      ¿Qué ocurre cuando la escasez existe desde el primer bloque
+      y todo el suministro está disponible desde el día uno?
+    </strong>
+    <br><br>
+    Sin emisiones. Sin desbloqueos. Sin calendarios.
+    <br>
+    El mercado —y solo el mercado— decide el precio, la liquidez y la relevancia.
+    <br><br>
+    En un entorno donde los grandes actores ya están posicionados en Bitcoin,
+    AntiBTC observa qué sucede cuando un activo nace sin ventajas estructurales para nadie.
+  </div>
+
+  <!-- PRINCIPIOS -->
+  <h2>Principios básicos</h2>
+  <ul>
+    <li>Suministro fijo, para siempre</li>
+    <li>Sin acuñar, sin quemar</li>
+    <li>Sin impuestos ni restricciones de transferencia</li>
+    <li>Sin privilegios de propietario</li>
+    <li>Totalmente en cadena y verificable</li>
+    <li>El mercado lo decide todo</li>
+  </ul>
+
+  <!-- TOKENOMICS -->
+  <h2>Tokenomics</h2>
+  <ul>
+    <li>Suministro total: 21.000.000 ANTI</li>
+    <li>Acuñación: deshabilitada permanentemente</li>
+    <li>Impuestos: 0%</li>
+    <li>Privilegios del propietario: ninguno</li>
+    <li>Cadena: Base</li>
+    <li>Liquidez: ETH / ANTI en Uniswap</li>
+  </ul>
+
+  <!-- DISTRIBUCIÓN -->
+  <h2>Aclaración sobre distribución y liquidez</h2>
+  <div class="box">
+    Los 21.000.000 de tokens ANTI existen en la cadena desde el primer día.
+    <br><br>
+    No hay contratos de vesting, desbloqueos programados ni distribución automática.
+    <br><br>
+    Solo una parte del suministro total está actualmente aportada como liquidez en Uniswap.
+    Cualquier cambio en la liquidez es una acción manual y totalmente visible en la cadena.
+    <br><br>
+    Todo movimiento de tokens es una transferencia estándar y verificable en Basescan.
+  </div>
+
+  <!-- ADVERTENCIA UNISWAP -->
+  <h2>¿Por qué Uniswap muestra una advertencia?</h2>
+  <div class="box">
+    AntiBTC es un token nuevo, con liquidez inicial limitada y sin un largo historial
+    de operaciones.
+    <br><br>
+    Los sistemas de seguridad automatizados marcan este tipo de tokens por defecto.
+    <br><br>
+    <strong>Esto NO significa que AntiBTC sea una trampa.</strong>
+    <br>
+    Cualquiera puede comprar y vender libremente.
+  </div>
+
+  <!-- TRANSPARENCIA -->
+  <h2>Transparencia</h2>
+  <ul>
+    <li>
+      Contrato:
+      <a href="https://basescan.org/token/0x29d6f672e051beac52c41956131fe299c21d195e" target="_blank">
+        Ver en Basescan
+      </a>
+      <div class="contract">
+        0x29d6f672e051beac52c41956131fe299c21d195e
+      </div>
+    </li>
+    <li>
+      Pool de liquidez:
+      <a href="https://app.uniswap.org/#/pool" target="_blank">
+        Ver en Uniswap
+      </a>
+    </li>
+  </ul>
+
+  <div class="footer">
+    AntiBTC es un experimento, no una inversión.<br>
+    Sin hoja de ruta. Sin promesas.
+  </div>
+
 </body>
 </html>
-
-
-
