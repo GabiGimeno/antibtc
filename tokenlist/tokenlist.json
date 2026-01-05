@@ -1,1 +1,1 @@
-
+{ "name": "AntiBTC Token List", "timestamp": "2026-01-05T00:00:00Z", "version": { "major": 1, "minor": 0, "patch": 0 }, "tags": {}, "logoURI": "https://raw.githubusercontent.com/GabiGimeno/antibtc/main/logo.png", "keywords": [ "antibtc", "base", "anti-bitcoin", "experiment" ], "tokens": [ { "chainId": 8453, "address": "0x20d6F72e05beA5C2A49156131FE299C21D195E", "name": "AntiBTC", "symbol": "ANTI", "decimals": 18, "logoURI": "https://raw.githubusercontent.com/GabiGimeno/antibtc/main/logo.png" } ] }
